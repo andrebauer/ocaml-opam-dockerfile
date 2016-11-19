@@ -6,10 +6,4 @@ You can run the container with
 
 	docker run -it --rm andrebauer/ocaml-opam-dockerfile
 
-Run inside your container
-
-	eval `opam config env`
-
-to setup the ocaml-opam-environment properly.
-
 

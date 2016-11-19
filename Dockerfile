@@ -32,3 +32,4 @@ RUN opam init --comp 4.02.3 && \
     opam update && \
     opam install depext
 RUN  . /home/ocaml/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true   
+RUN echo "eval \`opam config env\`" >> /home/ocaml/.bashrc
