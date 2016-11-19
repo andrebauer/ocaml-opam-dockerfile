@@ -27,7 +27,7 @@ RUN echo 'ocaml ALL=(ALL:ALL) NOPASSWD:ALL' > /etc/sudoers.d/ocaml && \
 USER ocaml
 ENV HOME /home/ocaml
 WORKDIR /home/ocaml
-RUN opam init --comp 4.02.3 && \
+RUN opam init --comp 4.03.0 && \
     eval `opam config env` && \
     opam update && \
     opam install depext
