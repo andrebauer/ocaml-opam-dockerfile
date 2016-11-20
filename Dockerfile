@@ -14,7 +14,8 @@ RUN apt-get update && \
     rsync \
     m4 \
     build-essential \
-    curl && \
+    curl \
+    openssh-client && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 RUN wget https://raw.github.com/ocaml/opam/master/shell/opam_installer.sh -O - | sh -s /usr/local/bin
